@@ -1,7 +1,11 @@
 import React from "react";
+import { TodoContext } from "../TodoContext";
 
 
-export function TodoSearch({state, setState}){
+export function TodoSearch(){
+
+
+    const {state, setState} = React.useContext(TodoContext)
 
 
     const onSearchValueChange = (event)=>{
@@ -19,7 +23,7 @@ export function TodoSearch({state, setState}){
             onChange={onSearchValueChange}
             className="p-1 rounded-r-none border-r-0 border-2 border-solid rounded-lg  text-start outline-0"  
             placeholder="search..."/>
-            <img className="h-11 w-10 p-1 rounded-l-none rounded-lg border-2 border-solid border-l-0" src="https://img.icons8.com/pastel-glyph/64/7950F2/search--v2.png"/>
+            <img className="h-11 w-10 p-1 rounded-l-none rounded-lg border-2 border-solid border-l-0" src="https://img.icons8.com/doodle/48/000000/search--v1.png"/>
         
        </div>
 
