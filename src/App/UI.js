@@ -6,6 +6,7 @@ import { TodoList } from "../Componentes/TodoList";
 import { TodoSearch } from "../Componentes/TodoSearch";
 import {CreateTodoButton} from "../Componentes/CreateTodoButton"
 import { Modal } from "../Modal/Modal";
+import { TodoForm } from "../TodoForm";
 
  function UI (){
 
@@ -43,7 +44,7 @@ import { Modal } from "../Modal/Modal";
                     {
                       !!openModal&&(
                         <Modal>
-                        <p>owjqojeiojeoijojqjo</p>
+                          <TodoForm/>
                       </Modal>
                       )
                     }

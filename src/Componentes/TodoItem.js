@@ -8,7 +8,7 @@ export function TodoItem(props) {
 
     return (
         <div className="mb-2">
-                 <li className="  grid justify-items-center">
+                 <li className="  grid justify-items-center ">
                     <div className="flex sd:-space-x-1 sm:w-1/4 ">
                     <span 
                         onClick={props.onComplete}
