@@ -36,9 +36,9 @@ import { TodoForm } from "../TodoForm";
                   <center>
                 
                     <div className="flex justify-center">
-                    <img className="rounded-full animate-bounce delay-150 duration-300 h-12 w-12 mt-12 shadow-lg shadow-slate-300/50" src="https://img.icons8.com/ios/50/000000/spinning-circle--v2.png"/>
-                    <img className="animate-bounce delay-300 duration-300 h-12 w-12 mt-12 rounded-full shadow-lg shadow-slate-300/50" src="https://img.icons8.com/ios/50/000000/spinning-circle--v2.png"/>
-                    <img className="animate-bounce delay-700 duration-300 h-12 w-12 mt-12 rounded-full shadow-lg shadow-slate-300/50" src="https://img.icons8.com/ios/50/000000/spinning-circle--v2.png"/>
+                    <img className="rounded-full animate-bounce delay-150 duration-300 h-12 w-12 mt-12 shadow-lg shadow-slate-500/50" src="https://img.icons8.com/ios-glyphs/60/FFFFFF/filled-circle.png"/>
+                    <img className="animate-bounce delay-300 duration-300 h-12 w-12 mt-12 rounded-full shadow-lg shadow-slate-500/50" src="https://img.icons8.com/ios-glyphs/60/FFFFFF/filled-circle.png"/>
+                    <img className="animate-bounce delay-700 duration-300 h-12 w-12 mt-12 rounded-full shadow-lg shadow-slate-500/50" src="https://img.icons8.com/ios-glyphs/60/FFFFFF/filled-circle.png"/>
                     </div>
                     <p className="mb-20 mt-6 subpixel-antialiased text-xl">We are uploading your data...</p>
                   </center>
