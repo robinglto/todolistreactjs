@@ -5,7 +5,6 @@ import { TodoItem } from "../Componentes/TodoItem";
 import { TodoList } from "../Componentes/TodoList";
 import { TodoSearch } from "../Componentes/TodoSearch";
 import {CreateTodoButton} from "../Componentes/CreateTodoButton"
-import { Modal } from "../Modal/Modal";
 import { TodoForm } from "../TodoForm";
 
  function UI (){
@@ -22,7 +21,7 @@ import { TodoForm } from "../TodoForm";
 
     return (
         <React.Fragment>
-        <div className="grid  ">
+        <div className="grid 50	 ">
           <TodoCounter/> 
             <TodoSearch/>
              
@@ -40,16 +39,7 @@ import { TodoForm } from "../TodoForm";
                     onDelete = {()=>deleteTodo(todo.text)}/>  ))}
                 </TodoList>
 
-
-                    {
-                      !!openModal&&(
-                        <Modal>
-                          <TodoForm/>
-                      </Modal>
-                      )
-                    }
-    
-            <CreateTodoButton setOpenModal={setOpenModal}/>
+            <TodoForm/>
         </div>
       </React.Fragment>
     )

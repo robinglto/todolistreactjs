@@ -22,9 +22,9 @@ export function useLocalStorage(itemName, initialValue){
     
           setItem(parseTodo)
           setLoading(false)
+          
         }catch(error){
           setError(error)
-  
         }
   
       },2000)
@@ -38,7 +38,9 @@ export function useLocalStorage(itemName, initialValue){
           const stringifiar = JSON.stringify(newTodos);
           localStorage.setItem(itemName, stringifiar);
           setItem(newTodos)
-        }catch(error){setError(error)}
+        }catch(error){
+          setError(error)
+        }
     }
   
     return {
