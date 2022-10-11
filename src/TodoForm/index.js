@@ -12,15 +12,17 @@ export function TodoForm(){
 
 
     const onChange =(e)=>{
-        setNewTodoValue(e.target.value.length<=30
+        setNewTodoValue(e.target.value.length<=30 && e.target.value.length>=1
             ?e.target.value
             :"")
         
     }
 
     const onAdd = (e)=>{
-        e.preventDefault()
-        addTodo(newTodoValue)
+        e.preventDefault();
+        !!newTodoValue
+        ?addTodo(newTodoValue)
+        :""
        setNewTodoValue("")
     }
 

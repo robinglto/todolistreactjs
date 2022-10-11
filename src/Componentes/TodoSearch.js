@@ -17,7 +17,7 @@ export function TodoSearch(){
     
     return(
     <div className=" grid justify-items-center">
-       <div className="flex mb-8 -space-x-2">
+       <div className="flex mb-8 -space-x-2 outline-0">
             <input 
             value={state}
             onChange={onSearchValueChange}
