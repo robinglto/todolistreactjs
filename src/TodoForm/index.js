@@ -19,10 +19,12 @@ export function TodoForm(){
     }
 
     const onAdd = (e)=>{
-        e.preventDefault();
-        !!newTodoValue
-        ?addTodo(newTodoValue)
-        :""
+        e.preventDefault()
+        if(!!newTodoValue){
+            addTodo(newTodoValue)
+        }else{
+            return""
+        }
        setNewTodoValue("")
     }
 
